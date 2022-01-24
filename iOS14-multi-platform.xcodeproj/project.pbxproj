@@ -17,6 +17,8 @@
 		84E4A23F279EE84A00189EF6 /* CourseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4A23D279EE84A00189EF6 /* CourseRow.swift */; };
 		84E4A241279EEA6500189EF6 /* CoursesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4A240279EEA6500189EF6 /* CoursesView.swift */; };
 		84E4A242279EEA6500189EF6 /* CoursesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4A240279EEA6500189EF6 /* CoursesView.swift */; };
+		84E4A244279EF1C300189EF6 /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4A243279EF1C300189EF6 /* Sidebar.swift */; };
+		84E4A245279EF1C300189EF6 /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4A243279EF1C300189EF6 /* Sidebar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,7 @@
 		84E4A22E279DBD8600189EF6 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		84E4A23D279EE84A00189EF6 /* CourseRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRow.swift; sourceTree = "<group>"; };
 		84E4A240279EEA6500189EF6 /* CoursesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesView.swift; sourceTree = "<group>"; };
+		84E4A243279EF1C300189EF6 /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,7 @@
 				84E4A21D279DBD8300189EF6 /* ContentView.swift */,
 				84E4A23D279EE84A00189EF6 /* CourseRow.swift */,
 				84E4A240279EEA6500189EF6 /* CoursesView.swift */,
+				84E4A243279EF1C300189EF6 /* Sidebar.swift */,
 				84E4A21E279DBD8600189EF6 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -195,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E4A244279EF1C300189EF6 /* Sidebar.swift in Sources */,
 				84E4A231279DBD8600189EF6 /* ContentView.swift in Sources */,
 				84E4A23E279EE84A00189EF6 /* CourseRow.swift in Sources */,
 				84E4A22F279DBD8600189EF6 /* iOS14_multi_platformApp.swift in Sources */,
@@ -206,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E4A245279EF1C300189EF6 /* Sidebar.swift in Sources */,
 				84E4A232279DBD8600189EF6 /* ContentView.swift in Sources */,
 				84E4A23F279EE84A00189EF6 /* CourseRow.swift in Sources */,
 				84E4A230279DBD8600189EF6 /* iOS14_multi_platformApp.swift in Sources */,
