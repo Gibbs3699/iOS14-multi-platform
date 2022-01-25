@@ -23,6 +23,8 @@
 		84E4A24827A04D2500189EF6 /* CourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4A24627A04D2400189EF6 /* CourseItem.swift */; };
 		84E4A24C27A04EA900189EF6 /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4A24B27A04EA900189EF6 /* CourseList.swift */; };
 		84E4A24D27A04EA900189EF6 /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4A24B27A04EA900189EF6 /* CourseList.swift */; };
+		84E4A24F27A057FC00189EF6 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4A24E27A057FC00189EF6 /* Course.swift */; };
+		84E4A25027A057FC00189EF6 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4A24E27A057FC00189EF6 /* Course.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,7 @@
 		84E4A243279EF1C300189EF6 /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
 		84E4A24627A04D2400189EF6 /* CourseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseItem.swift; sourceTree = "<group>"; };
 		84E4A24B27A04EA900189EF6 /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
+		84E4A24E27A057FC00189EF6 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,7 @@
 				84E4A24927A04E1E00189EF6 /* Navigation */,
 				84E4A24A27A04E3500189EF6 /* Items */,
 				84E4A240279EEA6500189EF6 /* CoursesView.swift */,
+				84E4A24E27A057FC00189EF6 /* Course.swift */,
 				84E4A24B27A04EA900189EF6 /* CourseList.swift */,
 				84E4A21C279DBD8300189EF6 /* iOS14_multi_platformApp.swift */,
 				84E4A21E279DBD8600189EF6 /* Assets.xcassets */,
@@ -223,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E4A24F27A057FC00189EF6 /* Course.swift in Sources */,
 				84E4A244279EF1C300189EF6 /* Sidebar.swift in Sources */,
 				84E4A24727A04D2500189EF6 /* CourseItem.swift in Sources */,
 				84E4A231279DBD8600189EF6 /* ContentView.swift in Sources */,
@@ -237,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E4A25027A057FC00189EF6 /* Course.swift in Sources */,
 				84E4A245279EF1C300189EF6 /* Sidebar.swift in Sources */,
 				84E4A24827A04D2500189EF6 /* CourseItem.swift in Sources */,
 				84E4A232279DBD8600189EF6 /* ContentView.swift in Sources */,
