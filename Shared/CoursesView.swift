@@ -12,26 +12,38 @@ struct CoursesView: View {
     @Namespace var namespace
     var body: some View {
         ZStack {
-            CourseItem()
-                //matchedGeometryEffect only on iOS 14
-                //share animate between 2 views
-                .matchedGeometryEffect(id: "Card", in: namespace, isSource: !show)
-                .frame(width: 335, height: 250, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                if show {
-                    ScrollView {
-                        CourseItem()
-                            .matchedGeometryEffect(id: "Card", in: namespace)
-                            .frame(height: 300)
-                        VStack {
-                            ForEach(0 ..< 20) { item in
-                                CourseRow()
-                            }
+            ScrollView {
+                VStack(spacing: 20) {
+                    CourseItem()
+                        //matchedGeometryEffect only on iOS 14
+                        //share animate between 2 views
+                        .matchedGeometryEffect(id: "Card", in: namespace, isSource: !show)
+                        .frame(width: 335, height: 250)
+                    
+                    CourseItem()
+                        .frame(width: 335, height: 250)
+                }
+                .frame(maxWidth: .infinity)
+            }
+            if show {
+                ScrollView {
+                    CourseItem()
+                        .matchedGeometryEffect(id: "Card", in: namespace)
+                        .frame(height: 300)
+                    VStack {
+                        ForEach(0 ..< 20) { item in
+                            CourseRow()
                         }
-                        .padding()
                     }
-                    .transition(.opacity)
-                    .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                        //bring to front
+                    .padding()
+                }
+                //prevent overlaping
+                .background(Color("Background 1"))
+                //AnyTransition to customize animation
+                .transition(
+                    .asymmetric(insertion:                         AnyTransition.opacity.animation(Animation.spring().delay(0.3)), removal:                         AnyTransition.opacity.animation(Animation.spring())))
+                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                    //bring to front
 //                        .zIndex(1)
             }
         }
