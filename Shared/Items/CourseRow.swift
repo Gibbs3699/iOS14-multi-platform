@@ -8,22 +8,22 @@
 import SwiftUI
 
 struct CourseRow: View {
+    var item: CourseSection = courseSections[0]
+    
     var body: some View {
         HStack(alignment: .top) {
-            Image(systemName: "paperplane.circle.fill")
+            Image(item.logo)
                 //adding renderingMode to get color
-                
-                .renderingMode(.template)
+                .renderingMode(.original)
                 .frame(width: 48.0, height: 48.0)
                 .imageScale(.medium)
-                .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.blue/*@END_MENU_TOKEN@*/)
+                .background(item.color)
                 .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                .foregroundColor(.white)
             
             VStack(alignment: .leading, spacing: 4.0) {
-                Text("SwiftUI")
+                Text(item.title)
                     .font(.subheadline).bold()
-                Text("Description")
+                Text(item.subtitle)
                     .font(.footnote)
                     .foregroundColor(.secondary)
             }
