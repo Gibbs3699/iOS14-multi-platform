@@ -19,9 +19,12 @@ struct CourseItem: View {
                     Spacer()
                     Image(course.image)
                         //use all available space
+                        .renderingMode(.original)
                         .resizable()
                         //make images fit on screen size
                         .aspectRatio(contentMode: .fit)
+                        .frame(maxWidth: 200)
+                    Spacer()
                 }
                 Spacer()
             }
@@ -35,7 +38,7 @@ struct CourseItem: View {
                 .font(.footnote)
                 .foregroundColor(Color.white)
         }
-        .padding(.all)
+        .padding(16)
         .background(course.color)
         .clipShape(RoundedRectangle(cornerRadius: 22, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/))
         .shadow(color: course.color.opacity(0.3), radius: 20, x: 0, y: 10)

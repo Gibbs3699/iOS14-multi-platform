@@ -15,13 +15,15 @@ struct CoursesView: View {
     var body: some View {
         ZStack {
             ScrollView {
-                VStack(spacing: 20) {
+                //LazyVGrid only in iOS14++
+                //GridItem() is a grid column, can customize
+                LazyVGrid(columns: [GridItem(.adaptive(minimum: 160), spacing: 16)], spacing: 16) {
                     ForEach(courses) { item in
                         CourseItem(course: item)
                             //matchedGeometryEffect only on iOS 14
                             //share animate between 2 views
                             .matchedGeometryEffect(id: item.id, in: namespace, isSource: !show)
-                            .frame(width: 335, height: 250)
+                            .frame(height: 200)
                             .onTapGesture {
                                 //adding withAnimation won't lag
                                 withAnimation(.spring()) {
@@ -34,6 +36,7 @@ struct CoursesView: View {
                     }
 
                 }
+                .padding(16)
                 .frame(maxWidth: .infinity)
             }
             if selectedItem != nil {
