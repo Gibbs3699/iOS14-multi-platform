@@ -10,6 +10,8 @@ import SwiftUI
 struct CoursesView: View {
     @State var show = false
     @Namespace var namespace
+    @State var selectedItem: Course? = nil
+    @State var isDisabled = false
     var body: some View {
         ZStack {
             ScrollView {
@@ -20,16 +22,35 @@ struct CoursesView: View {
                             //share animate between 2 views
                             .matchedGeometryEffect(id: item.id, in: namespace, isSource: !show)
                             .frame(width: 335, height: 250)
+                            .onTapGesture {
+                                //adding withAnimation won't lag
+                                withAnimation(.spring()) {
+                                    show.toggle()
+                                    selectedItem = item
+                                    isDisabled = true
+                                }
+                            }
+                            .disabled(isDisabled)
                     }
 
                 }
                 .frame(maxWidth: .infinity)
             }
-            if show {
+            if selectedItem != nil {
                 ScrollView {
-                    CourseItem(course: courses[0])
-                        .matchedGeometryEffect(id: courses[0].id, in: namespace)
+                    CourseItem(course: selectedItem!)
+                        .matchedGeometryEffect(id: selectedItem!.id, in: namespace)
                         .frame(height: 300)
+                        .onTapGesture {
+                            //adding withAnimation won't lag
+                            withAnimation(.spring()) {
+                                show.toggle()
+                                selectedItem = nil
+                                DispatchQueue.main.asyncAfter(deadline: .now()+0.5) {
+                                    isDisabled = false
+                                }
+                            }
+                        }
                     VStack {
                         ForEach(0 ..< 20) { item in
                             CourseRow()
@@ -45,12 +66,6 @@ struct CoursesView: View {
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                     //bring to front
 //                        .zIndex(1)
-            }
-        }
-        .onTapGesture {
-            //adding withAnimation won't lag
-            withAnimation(.spring()) {
-                show.toggle()
             }
         }
         //adding animation will lag
