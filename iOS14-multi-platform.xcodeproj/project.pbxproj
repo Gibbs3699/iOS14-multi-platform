@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84C7B72A27A1ADC5002B6C5E /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4FDF927A1AACD00189EF6 /* VisualEffectBlur.swift */; };
 		84E4A22F279DBD8600189EF6 /* iOS14_multi_platformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4A21C279DBD8300189EF6 /* iOS14_multi_platformApp.swift */; };
 		84E4A230279DBD8600189EF6 /* iOS14_multi_platformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4A21C279DBD8300189EF6 /* iOS14_multi_platformApp.swift */; };
 		84E4A231279DBD8600189EF6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4A21D279DBD8300189EF6 /* ContentView.swift */; };
@@ -43,6 +44,7 @@
 		84E4A26A27A1A5C200189EF6 /* Livestream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4A25D27A1A5C200189EF6 /* Livestream.swift */; };
 		84E4A26B27A1A5C200189EF6 /* TutorialSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4A25E27A1A5C200189EF6 /* TutorialSection.swift */; };
 		84E4A26C27A1A5C200189EF6 /* TutorialSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4A25E27A1A5C200189EF6 /* TutorialSection.swift */; };
+		84E4A26E27A1A7E200189EF6 /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4A26D27A1A7E200189EF6 /* VisualEffectBlur.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +71,8 @@
 		84E4A25C27A1A5C200189EF6 /* Tutorial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial.swift; sourceTree = "<group>"; };
 		84E4A25D27A1A5C200189EF6 /* Livestream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Livestream.swift; sourceTree = "<group>"; };
 		84E4A25E27A1A5C200189EF6 /* TutorialSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialSection.swift; sourceTree = "<group>"; };
+		84E4A26D27A1A7E200189EF6 /* VisualEffectBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
+		84E4FDF927A1AACD00189EF6 /* VisualEffectBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,7 @@
 		84E4A225279DBD8600189EF6 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				84E4A26D27A1A7E200189EF6 /* VisualEffectBlur.swift */,
 				84E4A226279DBD8600189EF6 /* Info.plist */,
 			);
 			path = iOS;
@@ -135,6 +140,7 @@
 		84E4A22C279DBD8600189EF6 /* macOS */ = {
 			isa = PBXGroup;
 			children = (
+				84E4FDF927A1AACD00189EF6 /* VisualEffectBlur.swift */,
 				84E4A22D279DBD8600189EF6 /* Info.plist */,
 				84E4A22E279DBD8600189EF6 /* macOS.entitlements */,
 			);
@@ -286,6 +292,7 @@
 				84E4A241279EEA6500189EF6 /* CoursesView.swift in Sources */,
 				84E4A24C27A04EA900189EF6 /* CourseList.swift in Sources */,
 				84E4A26B27A1A5C200189EF6 /* TutorialSection.swift in Sources */,
+				84E4A26E27A1A7E200189EF6 /* VisualEffectBlur.swift in Sources */,
 				84E4A26127A1A5C200189EF6 /* LivestreamSection.swift in Sources */,
 				84E4A26327A1A5C200189EF6 /* Download.swift in Sources */,
 			);
@@ -310,6 +317,7 @@
 				84E4A242279EEA6500189EF6 /* CoursesView.swift in Sources */,
 				84E4A24D27A04EA900189EF6 /* CourseList.swift in Sources */,
 				84E4A26C27A1A5C200189EF6 /* TutorialSection.swift in Sources */,
+				84C7B72A27A1ADC5002B6C5E /* VisualEffectBlur.swift in Sources */,
 				84E4A26227A1A5C200189EF6 /* LivestreamSection.swift in Sources */,
 				84E4A26427A1A5C200189EF6 /* Download.swift in Sources */,
 			);
