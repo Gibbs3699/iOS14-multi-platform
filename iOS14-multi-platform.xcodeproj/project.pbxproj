@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		84C7B72A27A1ADC5002B6C5E /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4FDF927A1AACD00189EF6 /* VisualEffectBlur.swift */; };
+		84C7B72C27A250FE002B6C5E /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7B72B27A250FE002B6C5E /* TabBar.swift */; };
+		84C7B72D27A250FF002B6C5E /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7B72B27A250FE002B6C5E /* TabBar.swift */; };
 		84E4A22F279DBD8600189EF6 /* iOS14_multi_platformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4A21C279DBD8300189EF6 /* iOS14_multi_platformApp.swift */; };
 		84E4A230279DBD8600189EF6 /* iOS14_multi_platformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4A21C279DBD8300189EF6 /* iOS14_multi_platformApp.swift */; };
 		84E4A231279DBD8600189EF6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4A21D279DBD8300189EF6 /* ContentView.swift */; };
@@ -48,6 +50,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84C7B72B27A250FE002B6C5E /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		84E4A21C279DBD8300189EF6 /* iOS14_multi_platformApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS14_multi_platformApp.swift; sourceTree = "<group>"; };
 		84E4A21D279DBD8300189EF6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		84E4A21E279DBD8600189EF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -152,6 +155,7 @@
 			children = (
 				84E4A243279EF1C300189EF6 /* Sidebar.swift */,
 				84E4A21D279DBD8300189EF6 /* ContentView.swift */,
+				84C7B72B27A250FE002B6C5E /* TabBar.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -279,6 +283,7 @@
 			files = (
 				84E4A24F27A057FC00189EF6 /* Course.swift in Sources */,
 				84E4A244279EF1C300189EF6 /* Sidebar.swift in Sources */,
+				84C7B72C27A250FE002B6C5E /* TabBar.swift in Sources */,
 				84E4A24727A04D2500189EF6 /* CourseItem.swift in Sources */,
 				84E4A26527A1A5C200189EF6 /* GradientModel.swift in Sources */,
 				84E4A26727A1A5C200189EF6 /* Tutorial.swift in Sources */,
@@ -304,6 +309,7 @@
 			files = (
 				84E4A25027A057FC00189EF6 /* Course.swift in Sources */,
 				84E4A245279EF1C300189EF6 /* Sidebar.swift in Sources */,
+				84C7B72D27A250FF002B6C5E /* TabBar.swift in Sources */,
 				84E4A24827A04D2500189EF6 /* CourseItem.swift in Sources */,
 				84E4A26627A1A5C200189EF6 /* GradientModel.swift in Sources */,
 				84E4A26827A1A5C200189EF6 /* Tutorial.swift in Sources */,

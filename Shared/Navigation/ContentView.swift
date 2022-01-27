@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    #if os(iOS)
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
+    #endif
+    
+    @ViewBuilder
     var body: some View {
         #if os(iOS)
+        if horizontalSizeClass == .compact {
+                TabBar()
+        }else {
+            Sidebar()
+        }
         Sidebar()
         #else
         Sidebar()
@@ -20,6 +30,8 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+        }
     }
 }
