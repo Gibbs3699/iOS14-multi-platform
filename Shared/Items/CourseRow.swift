@@ -23,6 +23,7 @@ struct CourseRow: View {
             VStack(alignment: .leading, spacing: 4.0) {
                 Text(item.title)
                     .font(.subheadline).bold()
+                    .foregroundColor(.primary)
                 Text(item.subtitle)
                     .font(.footnote)
                     .foregroundColor(.secondary)

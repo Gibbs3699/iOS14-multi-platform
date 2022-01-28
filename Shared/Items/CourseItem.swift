@@ -32,7 +32,6 @@ struct CourseItem: View {
                         .frame(maxWidth: 200)
                     Spacer()
                 }
-                Spacer()
             }
             
             Text(course.title)
